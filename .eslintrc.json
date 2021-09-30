@@ -24,16 +24,29 @@
     "prettier"
   ],
   "rules": {
-    "no-underscore-dangle": "off",
-    "prettier/prettier": "error",
-    "class-methods-use-this": "off",
-    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-var-requires": 0,
     "no-useless-constructor": "off",
-    "import/no-duplicates": "off",
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "_"
-    }],
-    // "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
+    "import/no-unresolved": "off",
+    "camelcase": "off",
+    "prettier/prettier": "warn",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-tabs": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "@typescript-eslint/ban-types": ["error",
+      {
+          "types": {
+              "{}": false,
+              "object": false
+          },
+          "extendDefaults": true
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
