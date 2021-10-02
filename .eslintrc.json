@@ -24,11 +24,17 @@
     "prettier"
   ],
   "rules": {
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/camelcase": "off",
+    "import/no-duplicates": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "_"
+    }],
+    "prettier/prettier": "warn",
     "@typescript-eslint/no-var-requires": 0,
     "no-useless-constructor": "off",
     "import/no-unresolved": "off",
     "camelcase": "off",
-    "prettier/prettier": "warn",
     "class-methods-use-this": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "no-tabs": 0,
